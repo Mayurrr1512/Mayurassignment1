@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff Directory</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="staff.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Staff Directory</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="grade.html">Grade Converter</a></li>
+        <li><a href="staff.html">Staff Page</a></li>
+        <li><a href="temperature.html">Temp Converter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Staff List</h2>
+    <button onclick="sortTable('name')">Sort by Name</button>
+    <button onclick="sortTable('salary')">Sort by Salary</button>
+
+    <table id="staff-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Location</th>
+          <th>Extn.</th>
+          <th>Start Date</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data rows inserted by JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p id="footer-text"></p>
+  </footer>
+
+</body>
+</html>

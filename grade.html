@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="grade.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Grade Converter</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="grade.html">Grade Converter</a></li>
+        <li><a href="staff.html">Staff Page</a></li>
+        <li><a href="temperature.html">Temp Converter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Enter Your Mark</h2>
+    <input type="text" id="mark-input-box" placeholder="Enter mark (0-100)" />
+    <button onclick="MarkToGrade()">Convert</button>
+    <p id="validation-message" style="color:red;"></p>
+    <p id="grade-result" style="font-weight: bold;"></p>
+  </main>
+
+  <footer>
+    <p id="footer-text"></p>
+  </footer>
+
+</body>
+</html>
